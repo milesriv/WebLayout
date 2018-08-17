@@ -1,0 +1,130 @@
+header {
+    background-color: #708090;
+}
+
+#linkGroup {
+    background-color: white;
+    border-radius: 5px;
+    padding: 1%;
+    font-size: large;
+    margin-top: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.link {
+    /*Remove border while keeping space reserved for border*/
+    border: solid transparent;
+    border-width: thin;
+    background: none;
+    font-size: large;
+    /*Remove underline*/
+    text-decoration: none;
+    color: black;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.link:hover {
+    background-color: #E4E4E4;
+    border: solid;
+    border-color: #AAABA6;
+    border-radius: 5px;
+    border-width: thin;
+    /*Remove underline*/
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    background-color: black;
+}
+
+#whitespace {
+    margin-top: 1.2%;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 1.5%;
+}
+
+p {
+    font-size: medium;
+    padding-left: 1%;
+}
+
+h3 {
+    letter-spacing: 10px;
+    color: #E39248;
+    padding: 1%;
+    /*Give slight bold look*/
+    text-shadow: .1px .1px #E39248;
+}
+
+#product {
+    padding-left: 5%;
+    color: white;
+    text-align: left;
+}
+
+#product .prodDesc {
+    /*Description doesn't use entire horizontal space*/
+    max-width: 80%;
+}
+
+#product .data {
+    /*Data doesn't use entire horizontal space*/
+    max-width: 80%;
+}
+
+#product h4 {
+    font-weight: bold;
+    color: black;
+    /*Keep Product Name centered on wells*/
+    padding-left: 25%;
+}
+
+#product .well {
+    background-color: #FE8D3F;
+    border-radius: 15px;
+}
+
+#product hr {
+    /*Slightly bolder with dark orange color*/
+    border: 1px solid #CD6116;
+}
+
+#product .buy {
+    text-align: center;
+}
+
+
+/*Tablets and mobile: center wells and well heading*/
+
+@media (max-width: 991px) {
+    #product .well {
+        width: 50%;
+    }
+    #product h4 {
+        padding-left: 14%;
+    }
+}
+
+
+/*Center logo on smaller devices*/
+
+@media (max-width: 1200px) {
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*Slightly shrink width of wells on larger screens*/
+
+@media (min-width:1500px) {
+    #product .well {
+        width: 75%;
+    }
+}
